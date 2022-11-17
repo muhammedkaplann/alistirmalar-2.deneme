@@ -1,0 +1,12 @@
+e=0
+def faktöriyel(sayi):
+    if sayi==0:
+        return 1
+    elif sayi==1:
+        return 1
+    else:
+        return sayi*faktöriyel(sayi-1)
+for n in range(0,1000):
+    e+=1/faktöriyel(n)
+print(e)
+    
